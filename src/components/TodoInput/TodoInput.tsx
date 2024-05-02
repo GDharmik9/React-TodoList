@@ -1,3 +1,4 @@
+import React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -9,12 +10,9 @@ interface TodoInputProps {
     setTodoValue: (value: string) => void
 }
 
-const TodoInput = (props: TodoInputProps) => {
+const TodoInput = (props:TodoInputProps) => {
 
     const { handleAddTodo, todoValue, setTodoValue } = props
-
-
-
 
     return (
         <Box
@@ -41,7 +39,6 @@ const TodoInput = (props: TodoInputProps) => {
                 className="todo-button"
                 variant="contained"
                 type="submit"
-
             >
                 Add
             </Button>
