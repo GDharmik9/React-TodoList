@@ -1,0 +1,18 @@
+.todo-wapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.todo-wapper .todo-input {
+    width: 100%;
+}
+
+.todo-wapper .todo-button {
+    width: 20%;
+    cursor: pointer;
+
+    
+}

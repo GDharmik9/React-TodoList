@@ -1,0 +1,47 @@
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #202124;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  background: #eff6ff;
+  gap: 14px;
+}
+
+.input-form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 14px;
+}
+
+.main .card-checkbox {
+  color: green;
+}
+
+.card-header .card-input {
+  width: 100%;
+  color: black;
+}
+
+/* .todoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: white;
+} */
