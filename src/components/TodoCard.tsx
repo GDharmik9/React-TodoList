@@ -23,13 +23,12 @@ interface TodoCardProps {
     handleCompleteTodo: (id: number) => void;
 }
 
-const TodoCard = (props: TodoCardProps) => {
+const TodoCard = ({ todos, title, id, handleDeleteTodo, editTodo, handleCompleteTodo }: TodoCardProps) => {
 
-    const { title, id, handleDeleteTodo, editTodo, handleCompleteTodo } = props
 
     const [disabled, setDisabled] = useState(true)
-    const checked = props.todos.find(todo => todo.id === id)?.completed
-    const currId = props.todos.find(todo => todo.id === id)?.id
+    const checked = todos.find(todo => todo.id === id)?.completed
+    const currId = todos.find(todo => todo.id === id)?.id
 
     const [todoUpdate, setTodoUpdate] = useState(title)
 

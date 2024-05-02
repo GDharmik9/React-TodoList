@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -10,9 +10,7 @@ interface TodoInputProps {
     setTodoValue: (value: string) => void
 }
 
-const TodoInput = (props:TodoInputProps) => {
-
-    const { handleAddTodo, todoValue, setTodoValue } = props
+const TodoInput = ({ handleAddTodo, todoValue, setTodoValue }: TodoInputProps) => {
 
     return (
         <Box
