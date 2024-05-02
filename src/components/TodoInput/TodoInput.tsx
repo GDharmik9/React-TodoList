@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -16,9 +16,8 @@ const TodoInput = ({ handleAddTodo, todoValue, setTodoValue }: TodoInputProps) =
         <Box
             className="todo-wapper"
             component="form"
-            validate="true"
             autoComplete="off"
-            onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
+            onSubmit={(e: React.FormEvent<HTMLFormElement>): void => {
                 e.preventDefault()
                 handleAddTodo(todoValue)
                 setTodoValue('')

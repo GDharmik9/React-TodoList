@@ -18,7 +18,6 @@ interface TodoCardProps {
     title: string,
     id: number,
     handleDeleteTodo: (id: number) => void;
-    setTodoValue: (value: string) => void;
     editTodo: (id: number, title: string) => void;
     handleCompleteTodo: (id: number) => void;
 }

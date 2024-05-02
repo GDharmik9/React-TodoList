@@ -14,6 +14,8 @@ interface TodoListProps {
         completed: boolean;
     }[];
     handleDeleteTodo: (id: number) => void;
+    editTodo: (id: number, title: string) => void;
+    handleCompleteTodo: (id: number) => void;
 }
 
 
